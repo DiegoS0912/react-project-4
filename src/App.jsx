@@ -21,8 +21,10 @@ function App() {
 
   return (
     <div className='content'>
-      <h1 className='title'>Crud de usuarios</h1>
-      <button className='user_buttom' onClick={handleOpen}>+ crear nuevo usuario</button>
+      <header className='header'>
+        <h1 className='title'>Crud de usuarios</h1>
+        <button className='user_buttom' onClick={handleOpen}>+ crear nuevo usuario</button>
+      </header>
       <FormUser
         createUser={createUser}
         editUser={editUser}
@@ -31,7 +33,7 @@ function App() {
         isOpen={isOpen}
         setIsOpen={setIsOpen}
       />
-      <div>
+      <div className='card_container'>
         {
           users?.map(user => (
             <CardUser 

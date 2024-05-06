@@ -18,9 +18,9 @@ const FormUser = ({createUser, editUser, updateUser, setEditUser, isOpen, setIsO
             createUser('/users', data);
         }
         reset({
+            first_name: '',
             email: '',
             password: '',
-            first_name: '',
             last_name: '',
             birthday: '',
         });
